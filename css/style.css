@@ -136,6 +136,7 @@
      left: 50%;
      transform: translate(-50%, -50%);
  }
+ 
 
  @media(min-width:870px){
     .main_content img{
@@ -235,7 +236,7 @@
     width:95vw;
     height:100%;
     position:absolute;
-    top: 100%;
+    top: 120%;
     left:50%;
     transform: translate(-50%, -50%);
     display:flex;
@@ -243,7 +244,6 @@
     justify-content:space-around;
     align-items:center;
     flex: 1 1;
-    overflow:hidden;
 }
 
 #portfolio img{
@@ -279,7 +279,8 @@
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-fill-mode: none;
-    animation-play-state: running; }
+    animation-play-state: running; 
+}
     
 @keyframes foto{
     from{
@@ -289,6 +290,7 @@
         transform:scale(1.1);
     }
 }
+
 .portfolio_foto h3{
     font-size: 7vh;
     position:absolute;
@@ -300,7 +302,7 @@
     #portfolio{
         justify-content:center;
         align-content:space-between;
-        top:120%;
+        top:145%;
     }
     #portfolio img{
         width: 55vw;
@@ -318,14 +320,14 @@
 }
 #contact h3{
     position:absolute;
-    top:40vw;
+    top:50vw;
     left:50%;
     transform:translate(-50%, -50%);
     font-size: 7vh;
 }
 #contact p{
     position:absolute;
-    top:50vw;
+    top:60vw;
     left:50%;
     transform:translate(-50%, -50%);
     font-size: 3vh;
@@ -335,21 +337,30 @@
         height:300vh;
     }
     #contact h3{
-    top:200vw;
+    top:190vw;
     padding-top:3vh;;
     }
     #contact p{
-        top:225vw;
+        top:220vw;
         }
 }
 
 @media (max-width:500px){
 
     #contact h3{
-    top:200vw;
+    top:190vw;
     }
     #contact p{
-        top:240vw;
+        top:220vw;
+        }
+}
+@media (min-width:1100px){
+
+    #contact h3{
+    top:46vw;
+    }
+    #contact p{
+        top:56vw;
         }
 }
 form input, textarea{
@@ -357,6 +368,8 @@ form input, textarea{
     padding:20px;
     background: #FAFAFF;
     border-radius: 15px;
+    outline:none;
+    resize:none;
     
 }
 .form form input:last-of-type{
@@ -375,15 +388,10 @@ form input, textarea{
     display:flex;
     flex-direction:column;
     position:absolute;
-    top:60vw;
+    top:70vw;
     left:50%;
     transform:translate(-50%);
     padding-bottom: 30px;
-}
-.form form textarea{
-    outline:none;
-    resize:none;
-    overflow:auto;
 }
 
 @media (max-width:870px){
@@ -393,7 +401,12 @@ form input, textarea{
 }
 @media (max-width:500px){
     .form form{
-        top:270vw;
+        top:245vw;
+    }
+}
+@media (min-width:1100px){
+    .form form {
+        top:66vw;
     }
 }
 footer{
