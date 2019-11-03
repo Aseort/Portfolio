@@ -2,14 +2,13 @@
  /* font-family: 'Montserrat', sans-serif;*/
 
  *{
-     margin:0;
      padding:0;
      box-sizing: border-box;
      font-family: 'Montserrat', sans-serif;
      margin: 0 auto;
  }
  nav {
-     width: 100vw;
+     width: 100%;
      background-color: #fff;
      position:fixed;
      text-align: center;
@@ -29,20 +28,21 @@
  }
  @media (min-width:870px){
      nav{
-         height:10vh;
+         height:10%;
          display:flex;
          align-items:center;
      }
      nav ul{
-         width:83vw;
+         width:83%;
          display:flex;
          align-items:center;
          justify-content:flex-end;
+         margin:0;
      }
      nav ul li{
         list-style:none;
         text-transform:uppercase;
-        margin:4vh;
+        margin:2vh;
         font-weight:700;
         border: 3px solid black;
         padding: 2vh;
@@ -56,17 +56,18 @@
      }
      nav .logo{
          text-align:start;
+            margin:0;
      }
  }
 
 
  .logo .material-icons{
-     padding: 4vh 2vh;
+     padding: 1vh;
      font-size: 5vh;
  }
 
  .wrapper{
-     width: 100vw;
+     width: 100%;
      height:100vh;
      position:relative;
      text-align:center;
@@ -77,11 +78,11 @@
 
  .wrapper h1, .wrapper p{
     position: relative;
-    top:35vh;
+    top:35%;
     color:rgb(0, 0, 0);
  }
  .wrapper h1{
-     font-size: 12vh;
+     font-size: 8vh;
      padding: 3vh;
      text-shadow: 6px 3px 6px #fff;
  }
@@ -93,14 +94,13 @@
  .solution {
      position:relative;
      text-align:center;
-     width: 100vw;
+     width: 100%;
      height:80vh;
  }
 
  .solution h2 {
     font-size: 5vh;
     padding: 8% 4%;
-    margin-top:5vh;
  }
 
  .solution button{
@@ -130,7 +130,7 @@
  }
 
  .main_content{
-     width:100vw;
+     width:100%;
      text-align:center;
  }
  .main_content img{
@@ -191,14 +191,14 @@
 
 .aside_info{
     font-size: 3vh;
-    width: 100vw;
+    width: 100%;
     padding: 30px;
     text-align: center;
 }
 .aside_info p {
     padding:5% 5%;
     font-size:4vh;
-    margin-top: 26vw;
+    margin-top: 26%;
 }
 @media (max-width:870px){
     .aside_info p{
@@ -207,9 +207,8 @@
 }
 #skills{
     padding: 4vh;
-    margin:4vh;
     display:inline-block;
-    width:60vw;
+    width:60%;
     text-align:center;
     font-size:4vh;
     background-color:#eee;
@@ -228,20 +227,20 @@
         align-items:center;
         font-size:5vh;
         padding: 40px;
-        margin:3vh 20vw;
+        margin:3vh auto;
     }
     #skills .material-icons{
         font-size: 16vh;
     }
 }
 .portfolio_foto{
-    width:100vw;
+    width:100%;
 }
 #portfolio{
-    width:100vw;
+    width:100%;
     display:flex;
     flex-wrap:wrap;
-    justify-content:space-around;
+    justify-content:center;
     align-items:center;
     flex: 1 1;
 }
@@ -327,7 +326,7 @@
 }
 
 #contact {
-    width:100vw;
+    width:100%;
     text-align:center;
 }
 #contact h3{
@@ -340,7 +339,7 @@
 }
 @media (min-width:870px){
     #contact {
-        margin:3vw;
+        padding:3vw;
     }
 }
 
@@ -364,7 +363,7 @@ form input, textarea{
     cursor: pointer;
 }
 .form form{
-    width:50vw;
+    width:50%;
     display:flex;
     flex-direction:column;
     padding-bottom: 30px;
@@ -372,6 +371,7 @@ form input, textarea{
 }
 
 footer{
+    width:100%;
     font-size:20px;
     padding: 2vh 0;
     background-color: #eee;
