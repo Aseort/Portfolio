@@ -29,7 +29,7 @@
  }
  @media (min-width:870px){
      nav{
-         height:14vh;
+         height:10vh;
          display:flex;
          align-items:center;
      }
@@ -272,6 +272,26 @@
     animation-play-state: running; 
 }
 #portfolio .portfolio3:hover img{
+    animation-name: foto;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running; 
+}
+#portfolio .portfolio4:hover img{
+    animation-name: foto;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running; 
+}
+#portfolio .portfolio5:hover img{
     animation-name: foto;
     animation-duration: 1.5s; 
     animation-timing-function: ease-out; 
